@@ -12,7 +12,6 @@ public class LoggingAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    // Log before method execution
     @Before("execution(* com.vlink.EmployeeManagement.Service.*.*(..))")
     public void logBeforeServiceMethods() {
         logger.info("Executing Service Method...");
